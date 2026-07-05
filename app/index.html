@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakash Nigam | Cloud & Security Professional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Aakash Nigam</h1>
+            <p class="subtitle">Cloud Infrastructure | Linux IAM | GRC Application Security</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card profile-section">
+            <h2>About Me</h2>
+            <p>
+                I am an IT professional with 3 years of corporate experience specializing in the <strong>Linux IAM domain</strong> and <strong>GRC Corporate Application Security</strong>. 
+                I focus on designing secure, scalable, and compliant systems. I am currently transitioning my expertise into Cloud-Native Architecture and DevSecOps, leveraging Infrastructure as Code to build automated, highly available environments.
+            </p>
+        </section>
+
+        <section class="card project-section">
+            <h2>Featured Architecture: Enterprise DevSecOps Portfolio</h2>
+            <p>
+                This portfolio is not just a static webpage; it is hosted on a highly available, fault-tolerant, and securely isolated AWS architecture provisioned entirely via <strong>Terraform (IaC)</strong>.
+            </p>
+            
+            <h3>Infrastructure & Technology Stack:</h3>
+            <ul class="tech-list">
+                <li><strong>Network Isolation:</strong> Custom VPC containing 4 subnets across 2 Availability Zones (AZs) for high availability.</li>
+                <li><strong>The DMZ (Public Subnets):</strong> Hosts an Application Load Balancer (ALB) acting as the secure ingress point, guarded by strict Security Groups allowing only HTTP/HTTPS traffic.</li>
+                <li><strong>The Vault (Private Subnets):</strong> Houses the compute layer. Completely isolated from direct internet access.</li>
+                <li><strong>Compute & Orchestration:</strong> Containerized via <strong>Docker</strong>, stored in a private <strong>Amazon ECR</strong> registry, and orchestrated using <strong>Amazon ECS</strong> running on serverless <strong>AWS Fargate</strong>.</li>
+                <li><strong>Security & IAM:</strong> Enforces the Principle of Least Privilege using decoupled Task Execution and Task Roles. Utilizes <strong>Security Group Chaining</strong> to ensure containers only accept traffic from the ALB.</li>
+                <li><strong>PrivateLink:</strong> Implements VPC Endpoints to pull ECR images securely over the AWS backbone network without traversing the public internet.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aakash Nigam. Deployed via Terraform & AWS ECS.</p>
+    </footer>
+</body>
+</html>
